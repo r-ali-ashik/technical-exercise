@@ -179,7 +179,7 @@ networks:
 ```
 NOTE: This container runs on the same external docker bridge network that MySQL container runs
 
-![Spring Boot Api](/images/technical-exercise.png)
+![Spring Boot Event Api](/src/main/resources/static/images/technical-exercise.png)
 
 [//]: # (![Local Image]&#40;/src/main/resources/static/images/technical-exercise.png&#41;)
 
