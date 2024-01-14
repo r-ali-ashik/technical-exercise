@@ -29,7 +29,7 @@ Before you start, make sure you have the following installed:
 
 ## Objectives: 
 1. Build the project
-2. Create a base docker image with ubuntu and jdk jdk-8u202
+2. Create a base docker image with ubuntu and jdk-8u202
 3. Create a docker network
 4. Run a MySQL container attach it with the network 
 5. Create a docker image of the spring boot app 
@@ -78,9 +78,9 @@ Before you start, make sure you have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/spring-boot-event-api.git
+    git clone https://github.com/r-ali-ashik/technical-exercise.git
     ```
-2. Build the project
+2. Build and create the package
     ```bash
     mvn clean package
     ```
@@ -178,3 +178,7 @@ networks:
     external: true
 ```
 NOTE: This container runs on the same external docker bridge network that MySQL container runs
+
+## Conclusion: 
+Find the application swagger in the following URL 
+`http://localhost:8080/swagger-ui/index.html`
