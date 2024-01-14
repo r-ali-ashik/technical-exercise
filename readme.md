@@ -179,6 +179,23 @@ networks:
 ```
 NOTE: This container runs on the same external docker bridge network that MySQL container runs
 
+## Challenge:
+Indecision was the biggest challenge; 
+I was unsure about which approach to follow for building and deploying the Docker image. 
+Initially, I considered using any base image from the public registry. 
+However, desiring better control, I ultimately opted to build my own Docker image.
+
+The goal was to create a single Docker image and place the Dockerfile in the repository. 
+Additionally, I aimed to provide my own JDK during the image-building process. 
+In that case I had to include the local JDK file in the repository since the Dockerfile can only read files from its context root.
+However, it later became evident that putting the JDK directly into the repository would have been a suboptimal idea.
+
+## Features I would add: 
+* As the application is running in a container, we don't have easy access to the logs. So, there isn't an easy way to monitor the logs. I would integrate a distributed monitoring and analytics system with the app.
+* Currently, I am building and packaging the app manually. I would integrate GitHub Actions as a CI/CD pipeline to automate the building and deployment process. The pipeline would build and package the app, create a Docker image, upload the image into the registry, and initiate a deployment script that pulls the image from the registry and deploys the container.
+* Considering the infrequent changes in the nature of the data, I would install a caching machanism.
+* I would aim for 100% test coverage.
+
 ## Conclusion: 
 Find the application swagger in the following URL 
 `http://localhost:8080/swagger-ui/index.html`
