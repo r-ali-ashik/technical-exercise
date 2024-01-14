@@ -181,12 +181,12 @@ NOTE: This container runs on the same external docker bridge network that MySQL 
 
 ## Challenge:
 Indecision was the biggest challenge; 
-I was unsure about which approach to follow for building and deploying the Docker image. 
+I spent some time decising which approach to follow for building and deploying the Docker image. 
 Initially, I considered using any base image from the public registry. 
-However, desiring better control, I ultimately opted to build my own Docker image.
+However, for better control, I ultimately decided to build my own Docker image.
 
 The goal was to create a single Docker image and place the Dockerfile in the repository. 
-Additionally, I aimed to provide my own JDK during the image-building process. 
+and to provide my own JDK during the image-building process. 
 In that case I had to include the local JDK file in the repository since the Dockerfile can only read files from its context root.
 However, it later became evident that putting the JDK directly into the repository would have been a suboptimal idea.
 
