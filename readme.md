@@ -179,6 +179,10 @@ networks:
 ```
 NOTE: This container runs on the same external docker bridge network that MySQL container runs
 
+![Spring Boot Api](/images/technical-exercise.png)
+
+[//]: # (![Local Image]&#40;/src/main/resources/static/images/technical-exercise.png&#41;)
+
 ## Challenge:
 Indecision was the biggest challenge; 
 I spent some time decising which approach to follow for building and deploying the Docker image. 
