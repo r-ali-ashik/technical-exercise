@@ -28,12 +28,12 @@ Before you start, make sure you have the following installed:
 - MySQL
 
 ## Objectives: 
-1. Build the project
-2. Create a base docker image with ubuntu and jdk-8u202
-3. Create a docker network
-4. Run a MySQL container attach it with the network 
-5. Create a docker image of the spring boot app 
-6. Run a container of the spring boot app and attach it to the same network 
+1. Build the project.
+2. Create a base Docker image with Ubuntu and jdk8u202.
+3. Create a custom Docker network. 
+4. Run a MySQL container and attach it to the network. 
+5. Create a Docker image of the Spring Boot app. 
+6. Run a container of the Spring Boot app and attach it to the same network.
 
 
 ## Project Structure
