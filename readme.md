@@ -194,6 +194,7 @@ However, it later became evident that putting the JDK directly into the reposito
 * As the application is running in a container, we don't have easy access to the logs. So, there isn't an easy way to monitor the logs. I would integrate a distributed monitoring and analytics system with the app.
 * Currently, I am building and packaging the app manually. I would integrate GitHub Actions as a CI/CD pipeline to automate the building and deployment process. The pipeline would build and package the app, create a Docker image, upload the image into the registry, and initiate a deployment script that pulls the image from the registry and deploys the container.
 * Considering the infrequent changes in the nature of the data, I would install a caching machanism.
+* I would add pagination support to the API
 * I would aim for 100% test coverage.
 
 ## Conclusion: 
